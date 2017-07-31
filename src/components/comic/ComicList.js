@@ -19,7 +19,8 @@ export default class ComicList extends React.Component {
     const { containerStyle } = styles;
     console.log(this.state)
     return (
-      <ScrollView style={containerStyle}>
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={true} showsVerticalScrollIndicator={true}
+                  style={containerStyle}>
         {this.renderComics()}
       </ScrollView>
     );

@@ -5,7 +5,7 @@ import CardSection from "../CardSection";
 
 export default class EventElement extends React.Component {
   render () {
-    const { headerContentStyle, thumbnailStyle, titleText, titleContainer, priceContainer, priceText } = styles;
+    const { headerContentStyle, thumbnailStyle, titleText, titleContainer } = styles;
 
     return (
       <Card>
@@ -37,23 +37,12 @@ const styles = StyleSheet.create({
   },
   titleContainer: {
     flex: 3,
-    alignItems: 'center',
+    alignItems: 'flex-start',
     marginTop: window.height/30
   },
   titleText: {
     fontSize: 10,
     color: '#fff',
-    alignSelf: 'center',
     margin: 5
-  },
-  priceContainer: {
-    flex: 3,
-    alignItems: 'flex-end',
-    justifyContent: 'flex-end'
-  },
-  priceText: {
-    fontSize: 14,
-    color: '#fff',
-    fontWeight: 'bold'
   }
 });
