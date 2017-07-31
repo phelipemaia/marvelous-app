@@ -1,0 +1,1 @@
+export const API_MARVEL = '18da4bb4057a8538e0cddd39633af3b7';

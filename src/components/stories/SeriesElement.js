@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
-import Card from './Card'
-import CardSection from "./CardSection";
+import Card from '../Card'
+import CardSection from "../CardSection";
 
-export default class ComicElement extends React.Component {
+export default class SeriesElement extends React.Component {
   render () {
     const { headerContentStyle, thumbnailStyle, titleText, titleContainer, priceContainer, priceText } = styles;
 
@@ -12,13 +12,10 @@ export default class ComicElement extends React.Component {
         <CardSection>
           <View>
             <Image style={thumbnailStyle}
-                   source={{uri: this.props.comic.thumbnail.path + "." + this.props.comic.thumbnail.extension}}>
+                   source={{uri: this.props.serie.thumbnail.path + "." + this.props.serie.thumbnail.extension}}>
               <View style={headerContentStyle}>
                 <View style={titleContainer}>
-                  <Text style={titleText}>{this.props.comic.title}</Text>
-                </View>
-                <View style={priceContainer}>
-                  <Text style={priceText}>{'$' + this.props.comic.prices[0].price}</Text>
+                  <Text style={titleText}>{this.props.serie.title}</Text>
                 </View>
               </View>
             </Image>

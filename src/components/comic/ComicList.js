@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet  } from 'react-native';
+import { ScrollView, StyleSheet  } from 'react-native';
 import axios from 'axios';
 import ComicElement from './ComicElement';
 
@@ -19,15 +19,16 @@ export default class ComicList extends React.Component {
     const { containerStyle } = styles;
     console.log(this.state)
     return (
-      <View style={containerStyle}>
+      <ScrollView style={containerStyle}>
         {this.renderComics()}
-      </View>
+      </ScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
   containerStyle: {
-    flexDirection: 'row'
+    flexDirection: 'row',
+    horizontal: true
   }
 });
