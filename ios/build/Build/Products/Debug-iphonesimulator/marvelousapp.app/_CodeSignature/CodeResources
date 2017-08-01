@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>American_Captain.ttf</key>
+		<data>
+		wC998M4YYl6IOIAkHJwFKafXSsY=
+		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		o8dUClhn8H6X0K0NVkw/9/hF8Bo=
+		JvGpudm5IkFYdNGCq1ikrT13S/U=
 		</data>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
 		<data>
@@ -223,7 +227,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lnfTRcBjXk8K7mUMdoRijckLcaE=
+		ddLRELMGpemmfl3k1lFRCu/0MRE=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -235,7 +239,7 @@
 		</data>
 		<key>PlugIns/marvelousappTests.xctest.dSYM/Contents/Resources/DWARF/marvelousappTests</key>
 		<data>
-		TKx+O9nNQaHmZIgUlGDwWwG9ar4=
+		0l2T26FiP90WVawg+e6uZv0oDPQ=
 		</data>
 		<key>PlugIns/marvelousappTests.xctest/Info.plist</key>
 		<data>
@@ -247,20 +251,31 @@
 		</data>
 		<key>PlugIns/marvelousappTests.xctest/marvelousappTests</key>
 		<data>
-		veVSoxVRoir80cwT4j4rdisUmNg=
+		AGMFkcPhDYZAN/TLKj5Ar1unk1A=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>American_Captain.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wC998M4YYl6IOIAkHJwFKafXSsY=
+			</data>
+			<key>hash2</key>
+			<data>
+			D/tj41VCQqghADpKdwtlOhQTbSpOUiYm1h6o8+hBWJw=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			o8dUClhn8H6X0K0NVkw/9/hF8Bo=
+			JvGpudm5IkFYdNGCq1ikrT13S/U=
 			</data>
 			<key>hash2</key>
 			<data>
-			8PDo4/yqhW2KsbQboMks+UUauapdP2S7CRRYOcgFce8=
+			0/Tdis3HUVN5p5bha+DSpiGu3goh5QsdB21e121J6s0=
 			</data>
 		</dict>
 		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
@@ -852,11 +867,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TKx+O9nNQaHmZIgUlGDwWwG9ar4=
+			0l2T26FiP90WVawg+e6uZv0oDPQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			STNz8URva/sr3W/zdqjEG2EsZnimQ5fdEsIzypMsqwc=
+			ov/hjNoAk9Pgkuh+ogXqOA2SU7wPudSdjkCp2i+PLxQ=
 			</data>
 		</dict>
 		<key>PlugIns/marvelousappTests.xctest/Info.plist</key>
@@ -885,11 +900,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			veVSoxVRoir80cwT4j4rdisUmNg=
+			AGMFkcPhDYZAN/TLKj5Ar1unk1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			glZ0Cs8byqvbYbKHU/B1msLQjqkFOkT3l8xD/nsKKwc=
+			MpX0LZhbiqN1imBmv7draHfvZ0wnIEg6XkG/J6ffd5Y=
 			</data>
 		</dict>
 	</dict>

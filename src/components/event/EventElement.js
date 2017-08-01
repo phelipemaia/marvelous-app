@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
-import Card from '../Card'
-import CardSection from "../CardSection";
+import Card from '../common/Card'
+import CardSection from "../common/CardSection";
 
 export default class EventElement extends React.Component {
   render () {
@@ -12,10 +12,10 @@ export default class EventElement extends React.Component {
         <CardSection>
           <View>
             <Image style={thumbnailStyle}
-                   source={{uri: this.props.comic.thumbnail.path + "." + this.props.comic.thumbnail.extension}}>
+                   source={{uri: this.props.event.thumbnail.path + "." + this.props.event.thumbnail.extension}}>
               <View style={headerContentStyle}>
                 <View style={titleContainer}>
-                  <Text style={titleText}>{this.props.comic.title}</Text>
+                  <Text style={titleText}>{this.props.event.title}</Text>
                 </View>
               </View>
             </Image>

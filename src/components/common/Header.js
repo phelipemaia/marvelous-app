@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     position: 'relative'
   },
   textStyle: {
-    fontSize: 20
+    fontSize: 26,
+    fontFamily: 'AmericanCaptain'
   }
 });

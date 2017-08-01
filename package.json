@@ -1,5 +1,5 @@
 {
-  "name": "marvelous-app",
+  "name": "marvelousapp",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -15,7 +15,7 @@
   },
   "rnpm": {
     "assets": [
-      "./assets/fonts/"
+      "./assets/fonts"
     ]
   },
   "jest": {

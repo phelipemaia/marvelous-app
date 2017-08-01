@@ -1,11 +1,12 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
-import Card from '../Card'
-import CardSection from "../CardSection";
+import Card from '../common/Card'
+import CardSection from "../common/CardSection";
 
 export default class SeriesElement extends React.Component {
   render () {
     const { headerContentStyle, thumbnailStyle, titleText, titleContainer } = styles;
+    console.log(this.props.serie.thumbnail.path + "." + this.props.serie.thumbnail.extension)
 
     return (
       <Card>
