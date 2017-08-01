@@ -19,7 +19,7 @@ export default class ComicList extends React.Component {
     const { containerStyle } = styles;
     console.log(this.state)
     return (
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={true} showsVerticalScrollIndicator={true}
+      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
                   style={containerStyle}>
         {this.renderComics()}
       </ScrollView>
@@ -29,7 +29,6 @@ export default class ComicList extends React.Component {
 
 const styles = StyleSheet.create({
   containerStyle: {
-    flexDirection: 'row',
-    horizontal: true
+    flexDirection: 'row'
   }
 });

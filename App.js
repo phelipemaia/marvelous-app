@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/Header';
 import ComicList from './src/components/comic/ComicList';
-import StoriesList from './src/components/stories/SeriesList';
+import SeriesList from './src/components/series/SeriesList';
 import EventList from './src/components/event/EventList';
 
 export default class App extends React.Component {
@@ -14,8 +14,8 @@ export default class App extends React.Component {
         <ComicList />
         <Text>Events</Text>
         <EventList />
-        <Text>Stories</Text>
-        <StoriesList />
+        <Text>Series</Text>
+        <SeriesList />
       </View>
     );
   }
