@@ -1,28 +1,34 @@
 import React from 'react';
-import { ScrollView, StyleSheet  } from 'react-native';
-import axios from 'axios';
+import { StyleSheet, FlatList } from 'react-native';
 import EventElement from './EventElement';
+import CacheRequest from '../../util/CacheRequest';
 
 export default class EventList extends React.Component {
   state = { events: [] };
 
   componentWillMount() {
-    axios.get('https://gateway.marvel.com:443/v1/public/events?apikey=18da4bb4057a8538e0cddd39633af3b7&hash=0ba2b6141949d9277554422a698c4549&ts=1501259144084')
-      .then(response => this.setState({ events: response.data.data.results }));
+    CacheRequest.get('comics', 'https://gateway.marvel.com:443/v1/public/events')
+      .then(result => {
+        this.setState({ events: result })
+      })
+      .catch(error => {
+        console.error('Error on comics request ', error)
+      });
   }
 
   renderEvents() {
     return this.state.events.map(event => <EventElement key={event.id} event={event}></EventElement>);
+    //<EventElement key={item.id} event={item} />
   }
 
   render () {
     const { containerStyle } = styles;
-    console.log(this.state)
     return (
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
-            style={containerStyle}>
-        {this.renderEvents()}
-      </ScrollView>
+      <FlatList data={this.state.events} renderItem={({ item }) => (
+        <EventElement key={item.id} event={item}></EventElement>
+      )} horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
+                style={containerStyle}>
+      </FlatList>
     );
   }
 }

@@ -1,14 +1,19 @@
 import React from 'react';
-import { ScrollView, StyleSheet  } from 'react-native';
-import axios from 'axios';
+import { FlatList, StyleSheet  } from 'react-native';
 import ComicElement from './ComicElement';
+import CacheRequest from '../../util/CacheRequest';
 
 export default class ComicList extends React.Component {
   state = { comics: [] };
 
   componentWillMount() {
-    axios.get('https://gateway.marvel.com:443/v1/public/comics?apikey=18da4bb4057a8538e0cddd39633af3b7&hash=0ba2b6141949d9277554422a698c4549&ts=1501259144084')
-      .then(response => this.setState({ comics: response.data.data.results }));
+    CacheRequest.get('comics', 'https://gateway.marvel.com:443/v1/public/comics')
+      .then(result => {
+        this.setState({ comics: result })
+      })
+      .catch(error => {
+        console.error('Error on comics request ', error)
+      });
   }
 
   renderComics() {
@@ -19,10 +24,11 @@ export default class ComicList extends React.Component {
     const { containerStyle } = styles;
     console.log(this.state)
     return (
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
-                  style={containerStyle}>
-        {this.renderComics()}
-      </ScrollView>
+      <FlatList data={this.state.comics} renderItem={({ item }) => (
+        <ComicElement key={item.id} comic={item}></ComicElement>
+      )} horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
+                style={containerStyle}>
+      </FlatList>
     );
   }
 }

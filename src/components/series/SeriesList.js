@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet  } from 'react-native';
+import { FlatList, StyleSheet  } from 'react-native';
 import axios from 'axios';
 import SeriesElement from './SeriesElement';
 
@@ -17,12 +17,12 @@ export default class StoriesList extends React.Component {
 
   render () {
     const { containerStyle } = styles;
-    console.log(this.state)
     return (
-      <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
-            style={containerStyle}>
-        {this.renderSeries()}
-      </ScrollView>
+      <FlatList data={this.state.series} renderItem={({ item }) => (
+        <SeriesElement key={item.id} serie={item}></SeriesElement>
+      )} horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
+                style={containerStyle}>
+      </FlatList>
     );
   }
 }
