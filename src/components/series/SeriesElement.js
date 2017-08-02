@@ -6,7 +6,6 @@ import CardSection from "../common/CardSection";
 export default class SeriesElement extends React.Component {
   render () {
     const { headerContentStyle, thumbnailStyle, titleText, titleContainer } = styles;
-    console.log(this.props.serie.thumbnail.path + "." + this.props.serie.thumbnail.extension)
 
     return (
       <Card>

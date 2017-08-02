@@ -12,7 +12,7 @@ export default class ComicElement extends React.Component {
         <CardSection>
           <View>
             <Image style={thumbnailStyle}
-                   source={{uri: this.props.comic.thumbnail.path + "." + this.props.comic.thumbnail.extension}}>
+                   source={{uri: this.props.comic.thumbnail.path + "." + this.props.comic.thumbnail.extension, cache: 'only-if-cached'}}>
               <View style={headerContentStyle}>
                 <View style={titleContainer}>
                   <Text style={titleText}>{this.props.comic.title}</Text>

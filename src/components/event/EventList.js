@@ -1,33 +1,47 @@
 import React from 'react';
-import { StyleSheet, FlatList } from 'react-native';
+import { FlatList, StyleSheet  } from 'react-native';
 import EventElement from './EventElement';
 import CacheRequest from '../../util/CacheRequest';
 
 export default class EventList extends React.Component {
-  state = { events: [] };
+  constructor(props) {
+    super(props);
+
+    this.state = { loading: true, comics: [], offset: 0, limit: 10 };
+  }
 
   componentWillMount() {
-    CacheRequest.get('comics', 'https://gateway.marvel.com:443/v1/public/events')
-      .then(result => {
-        this.setState({ events: result })
-      })
-      .catch(error => {
-        console.error('Error on comics request ', error)
+    this.makeRemoteRequest();
+  }
+
+  makeRemoteRequest = (discardCache = false) => {
+    let url = `https://gateway.marvel.com:443/v1/public/events?offset=${this.state.offset}&limit=${this.state.limit}`;
+
+    // CacheRequest.get('events', url, this.state.offset, discardCache)
+    //   .then(result => {
+    //     this.setState({ events: result })
+    //   })
+    //   .catch(error => {
+    //     console.error('Error on events request ', error)
+    //   });
+  }
+
+  handleLoadMore = () => {
+    this.setState({
+        offset: this.state.offset + 20
+      },
+      () => {
+        this.makeRemoteRequest();
       });
   }
 
-  renderEvents() {
-    return this.state.events.map(event => <EventElement key={event.id} event={event}></EventElement>);
-    //<EventElement key={item.id} event={item} />
-  }
-
-  render () {
+  render() {
     const { containerStyle } = styles;
     return (
       <FlatList data={this.state.events} renderItem={({ item }) => (
         <EventElement key={item.id} event={item}></EventElement>
       )} horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
-                style={containerStyle}>
+                style={containerStyle} onEndReached={this.handleLoadMore} onEndThreshold={50} keyExtractor={(item, index) => item.id}>
       </FlatList>
     );
   }

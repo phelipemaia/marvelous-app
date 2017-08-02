@@ -17,7 +17,7 @@ export default class StoriesList extends React.Component {
 
   render () {
     const { containerStyle } = styles;
-    console.log(this.state)
+
     return (
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
                   style={containerStyle}>

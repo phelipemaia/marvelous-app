@@ -12,7 +12,7 @@ export default class EventElement extends React.Component {
         <CardSection>
           <View>
             <Image style={thumbnailStyle}
-                   source={{uri: this.props.event.thumbnail.path + "." + this.props.event.thumbnail.extension}}>
+                   source={{uri: this.props.event.thumbnail.path + "." + this.props.event.thumbnail.extension, cache: 'only-if-cached'}}>
               <View style={headerContentStyle}>
                 <View style={titleContainer}>
                   <Text style={titleText}>{this.props.event.title}</Text>

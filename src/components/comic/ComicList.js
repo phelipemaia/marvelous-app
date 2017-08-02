@@ -7,7 +7,7 @@ export default class ComicList extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { loading: true, comics: [], offset: 0, limit: 20 };
+    this.state = { loading: true, comics: [], offset: 0, limit: 10 };
   }
 
   componentWillMount() {
@@ -17,9 +17,9 @@ export default class ComicList extends React.Component {
   makeRemoteRequest = (discardCache = false) => {
     let url = `https://gateway.marvel.com:443/v1/public/comics?offset=${this.state.offset}&limit=${this.state.limit}`;
 
-    CacheRequest.get('comics', url, discardCache)
+    CacheRequest.get('comics', url, this.state.offset, discardCache)
       .then(result => {
-        this.setState({ comics: result })
+        this.setState({ comics: this.state.offset === 0 ? result : [...this.state.comics, ...result] })
       })
       .catch(error => {
         console.error('Error on comics request ', error)
@@ -27,8 +27,9 @@ export default class ComicList extends React.Component {
   }
 
   handleLoadMore = () => {
+    console.log('load more')
     this.setState({
-      offset: this.state.offset + 20
+      offset: this.state.offset + 10
     },
       () => {
         this.makeRemoteRequest();
@@ -41,7 +42,7 @@ export default class ComicList extends React.Component {
       <FlatList data={this.state.comics} renderItem={({ item }) => (
         <ComicElement key={item.id} comic={item}></ComicElement>
       )} horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
-                style={containerStyle} onEndReached={this.handleLoadMore} onEndThreshold={50}>
+                style={containerStyle} onEndReached={this.handleLoadMore} onEndReachedThreshold={8}>
       </FlatList>
     );
   }
