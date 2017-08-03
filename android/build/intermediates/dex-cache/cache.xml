@@ -3,12 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jar="C:\Users\phelipe_maia\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_d04dc68faf5448da46b98490df29d11fc1762763.jar" />
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_974568a3501e1c8c94ccc9f37f84c44df03facf9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_0b4108c2a92894f2c7c2e958eb92e7f15f83f0db.jar" />
     </item>
     <item
         is-multidex="false"
@@ -17,7 +26,43 @@
         optimize="true"
         revision="23.0.1"
         sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.0.1_753f06d500481760babf6e401ba20dcde531dd57.jar" />
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.0.1_feeb945e32f5b945ee93641e611bf3cd2424cbed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_f4652d8bbe638eb4b2438d60ff63ba2eb56f86ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_e55f92e77d7478b16d0a5b1f0ecabcd4ea0b86d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\phelipe_maia\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_58b1a9a3a274cfcca7843f202d5a6923a4573b85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\phelipe_maia\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_d04dc68faf5448da46b98490df29d11fc1762763.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,30 +75,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_d0916660c4063290c148190e9d1ed7c0760bd71d.jar" />
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.0.1_7f04c52d591d23fdbf4439868c8a4169a54f6066.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.0.1\jars\classes.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.0.1_bdef85f7d17c3b91d2f8204fa6edba34e9265bfb.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_a7dd2b24c1b297a600571b635460d57d4ecc479f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_6eff64dd4f6606fa0bd41811d0843d8a87c061dd.jar" />
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.0.1_d8e6bf5ccc98ebbe7ba2adac8f3899d594a6f3b0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,48 +111,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_dd15d56c1d20b206d81fbde36f7ad0875abc773c.jar" />
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.0.1_0e2e1dca0d2bd332e4fc593ab93a2d1bae798bf4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.46.4\jars\libs\infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_974568a3501e1c8c94ccc9f37f84c44df03facf9.jar" />
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_8192b0c9e03f3ea1505d7bf093d46347c2a2a90b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.0.1\jars\classes.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.0.1_a4c4d52e7f35a3701a17bbafa4ee837b8ecb7ee5.jar" />
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.0.1_6692c7e7807d865619d9582ef8b6d6f05caa8b7a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.46.4\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_1e671c25f87859de0f3670aed14d4d9937950222.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_b41a1795d1342f639224529c922a00632bce19f5.jar" />
+        sha1="c5526d30278eb171f4a1325bd6b927c9057c91f4">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.46.4_ee2d09adf91e161f91936bac17ec84cff297d784.jar" />
     </item>
     <item
         is-multidex="false"
@@ -129,21 +165,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.0.1\jars\classes.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.0.1_96eb30db059d14db11029c756c79be9f20098eb6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_7bc2d21ee92090617fef2b0b08888eb90c4aa73e.jar" />
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_7f880d8f03a8e0650057eb5d0ecb6675178a1db6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -156,39 +183,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.46.4\jars\libs\infer-annotations-4.0.jar"
+        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.0.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_2ae95e6e4dc4504312a31d42b638307d8950d0a6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.0.1_d07790d7d35d674f8a537148ed6953a8c511b8d3.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\phelipe_maia\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_58b1a9a3a274cfcca7843f202d5a6923a4573b85.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.46.4\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c5526d30278eb171f4a1325bd6b927c9057c91f4">
-        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.46.4_4640456b71bfacecac7c0bb46ded57a4d28619d7.jar" />
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="C:\Users\phelipe_maia\Documents\workspace\marvelousapp\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.0.1_a10e02a249c9cde83eca208164e332fd6ac36f7e.jar" />
     </item>
 
 </items>

@@ -10,24 +10,28 @@ export default class RequestCache {
       if (discardCache) {
         AsyncStorage.removeItem(key);
       }
-
-      if (offset === 0) {
-        return AsyncStorage.getItem(key)
-          .then((value) => {
-            if (value !== null) {
-              let cacheValue = JSON.parse(value);
-              if (cacheValue.data) {
-                return new Promise((resolve, reject) => {
-                  resolve(cacheValue.data);
-                });
-              }
+      console.log('offset')
+      console.log(offset)
+      return AsyncStorage.getItem(key)
+        .then((value) => {
+          let cachedValue = null;
+          if (value) {
+            cachedValue = JSON.parse(value);
+          }
+          if (cachedValue && offset === 0) {
+            if (cachedValue.data) {
+              return new Promise((resolve, reject) => {
+                resolve(cachedValue.data);
+              });
+            }
+          } else {
+            if (cachedValue) {
+              return RequestCache._doRequest(key, url, offset, cachedValue.data);
             } else {
               return RequestCache._doRequest(key, url, offset);
             }
-          });
-      } else {
-        return RequestCache._doRequest(key, url, offset);
-      }
+          }
+        });
 
     } catch (error) {
       console.error('Error on CacheRequest ', error);
@@ -49,7 +53,7 @@ export default class RequestCache {
           finalData = List(data).concat(response.data.data.results).toArray();
         }
         AsyncStorage.setItem(key, JSON.stringify({offset: offset, data: finalData}));
-        return finalData;
+        return response.data.data.results;
       });
   }
 }

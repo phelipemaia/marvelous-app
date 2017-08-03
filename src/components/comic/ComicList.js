@@ -26,14 +26,15 @@ export default class ComicList extends React.Component {
       });
   }
 
-  handleLoadMore = () => {
-    console.log('load more')
-    this.setState({
-      offset: this.state.offset + 10
-    },
-      () => {
-        this.makeRemoteRequest();
-      });
+  handleLoadMore = (info) => {
+    if (info.distanceFromEnd > 0) {
+      this.setState({
+          offset: this.state.offset + 10
+        },
+        () => {
+          this.makeRemoteRequest();
+        });
+    }
   }
 
   render() {
@@ -42,7 +43,7 @@ export default class ComicList extends React.Component {
       <FlatList data={this.state.comics} renderItem={({ item }) => (
         <ComicElement key={item.id} comic={item}></ComicElement>
       )} horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}
-                style={containerStyle} onEndReached={this.handleLoadMore} onEndReachedThreshold={8}>
+                style={containerStyle} onEndReached={this.handleLoadMore} onEndReachedThreshold={0.5}>
       </FlatList>
     );
   }
