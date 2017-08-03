@@ -10,8 +10,6 @@ export default class RequestCache {
       if (discardCache) {
         AsyncStorage.removeItem(key);
       }
-      console.log('offset')
-      console.log(offset)
       return AsyncStorage.getItem(key)
         .then((value) => {
           let cachedValue = null;
@@ -21,7 +19,7 @@ export default class RequestCache {
           if (cachedValue && offset === 0) {
             if (cachedValue.data) {
               return new Promise((resolve, reject) => {
-                resolve(cachedValue.data);
+                resolve(cachedValue);
               });
             }
           } else {

@@ -19,7 +19,12 @@ export default class ComicList extends React.Component {
 
     CacheRequest.get('comics', url, this.state.offset, discardCache)
       .then(result => {
-        this.setState({ comics: this.state.offset === 0 ? result : [...this.state.comics, ...result] })
+        let offset = result.offset;
+        if (offset) {
+          this.setState({comics: this.state.offset === 0 ? result : [...this.state.comics, ...result], offset: offset})
+        } else {
+          this.setState({comics: this.state.offset === 0 ? result : [...this.state.comics, ...result]})
+        }
       })
       .catch(error => {
         console.error('Error on comics request ', error)
