@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   titleContainer: {
     flex: 3,
     alignItems: 'flex-start',
-    marginTop: window.height/30
+    marginTop: 10
   },
   titleText: {
     fontSize: 10,

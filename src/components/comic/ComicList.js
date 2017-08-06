@@ -1,11 +1,13 @@
 import React from 'react';
 import { FlatList, StyleSheet  } from 'react-native';
 import ComicElement from './ComicElement';
-import CacheRequest from '../../util/CacheRequest';
+import CacheRequest from '../../util/RequestCache';
 
 export default class ComicList extends React.Component {
   constructor(props) {
     super(props);
+
+    console.log('zxc')
 
     this.state = { loading: true, comics: [], offset: 0, limit: 10 };
   }
@@ -15,6 +17,7 @@ export default class ComicList extends React.Component {
   }
 
   makeRemoteRequest = (discardCache = false) => {
+    console.log('qwe')
     let url = `https://gateway.marvel.com:443/v1/public/comics?offset=${this.state.offset}&limit=${this.state.limit}`;
 
     CacheRequest.get('comics', url, this.state.offset, discardCache)

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, StyleSheet  } from 'react-native';
 import EventElement from './EventElement';
-import CacheRequest from '../../util/CacheRequest';
+import CacheRequest from '../../util/RequestCache';
 
 export default class EventList extends React.Component {
   constructor(props) {
@@ -19,11 +19,13 @@ export default class EventList extends React.Component {
 
     CacheRequest.get('events', url, this.state.offset, discardCache)
       .then(result => {
-        this.setState({ events: this.state.offset === 0 ? result : [...this.state.events, ...result] })
+        let offset = result.offset;
+        if (offset) {
+          this.setState({events: this.state.offset === 0 ? result : [...this.state.events, ...result], offset: offset})
+        } else {
+          this.setState({events: this.state.offset === 0 ? result : [...this.state.events, ...result]})
+        }
       })
-      .catch(error => {
-        console.error('Error on comics request ', error)
-      });
   }
 
   handleLoadMore = (info) => {
